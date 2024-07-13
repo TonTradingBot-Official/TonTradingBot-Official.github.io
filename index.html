@@ -3,151 +3,299 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TonTradingBot</title>
+    <title>TonTradingBot - Advanced Crypto Trading on TON</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
+        :root {
+            --primary-color: #0088cc;
+            --secondary-color: #005580;
+            --accent-color: #00aaff;
+            --text-color: #333333;
+            --bg-color: #f4f4f4;
+            --card-bg: #ffffff;
+            --hover-color: #e6e6e6;
+        }
+        
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Segoe UI', 'Roboto', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
             margin: 0;
             padding: 0;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2, h3 {
-            color: #333;
-        }
-        p {
             line-height: 1.6;
         }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        
+        .tagline {
+            font-size: 1.3em;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        nav {
+            background-color: var(--secondary-color);
+            padding: 10px 0;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        main {
+            padding: 40px 0;
+        }
+        
         .section {
             margin-bottom: 40px;
         }
+        
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .feature-card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .feature-icon {
+            font-size: 2em;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
         .btn {
             display: inline-block;
-            padding: 10px 20px;
-            margin: 20px 0;
-            background-color: #007BFF;
+            background-color: var(--primary-color);
             color: white;
-            text-decoration: none;
+            padding: 10px 20px;
             border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
         }
+        
         .btn:hover {
-            background-color: #0056b3;
+            background-color: var(--secondary-color);
         }
-        ul {
-            list-style: none;
-            padding: 0;
+        
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
         }
-        ul li {
-            margin-bottom: 10px;
+        
+        @media (max-width: 768px) {
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 10px 0;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to TonTradingBot</h1>
-        <p>TonTradingBot is your all-in-one solution for cryptocurrency trading developed on the TON blockchain, accessible directly through Telegram. It revolutionizes trading by offering a comprehensive suite of features designed to enhance trading efficiency and profitability.</p>
-        
-        <div class="section">
+    <header>
+        <div class="container">
+            <h1>TonTradingBot</h1>
+            <p class="tagline">Your all-in-one solution for cryptocurrency trading on the TON blockchain</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#referral">Referral System</a></li>
+            <li><a href="#wallet">Wallet Management</a></li>
+            <li><a href="#trading">Trading</a></li>
+            <li><a href="#additional">Additional Features</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="features" class="section">
             <h2>Key Features</h2>
-            <h3>Multi-Level Referral System</h3>
-            <p>TonTradingBot features a robust Referral System with five tiers, offering users the opportunity to earn lucrative rewards unlike any other bot on the market.</p>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-users feature-icon"></i>
+                    <h3>Multi-Level Referral System</h3>
+                    <p>Earn lucrative rewards with our 5-tier referral system.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-wallet feature-icon"></i>
+                    <h3>Multi-Wallet Management</h3>
+                    <p>Create and manage up to 20 wallets with ease.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-exchange-alt feature-icon"></i>
+                    <h3>Seamless Trading</h3>
+                    <p>Buy and sell tokens directly through our bot.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-bolt feature-icon"></i>
+                    <h3>Sniper Mode</h3>
+                    <p>Quickly buy newly listed tokens with precision.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-chart-line feature-icon"></i>
+                    <h3>Limit Orders</h3>
+                    <p>Set strategic buy or sell orders at desired prices.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-clone feature-icon"></i>
+                    <h3>Copy-Trading</h3>
+                    <p>Replicate successful traders' strategies effortlessly.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="referral" class="section">
+            <h2>Multi-Level Referral System</h2>
+            <p>Join our robust Referral System with five tiers and earn lucrative rewards:</p>
+            <ul>
+                <li><strong>Level 1:</strong> 300 points and 30% of transaction fees for direct referrals.</li>
+                <li><strong>Levels 2-5:</strong> 50 points and 5% of transaction fees per level.</li>
+            </ul>
             <a href="https://t.me/Ton_TradeBot" class="btn">Join the Referral System</a>
-            <ul>
-                <li><strong>Level 1:</strong> Earn 300 points for each user you directly refer and 30% of their transaction fees.</li>
-                <li><strong>Levels 2-5:</strong> Earn 50 points and 5% of transaction fees from trades made by referrals up to five levels deep.</li>
-                <li><strong>Referral Statistics Display:</strong> Track your referral points, earnings, and more.</li>
-                <li><strong>Claim Function:</strong> Make claims once every 24 hours, with a minimum claim amount of 0.5 TON.</li>
-                <li><strong>View Referral Tree:</strong> See who referred each user and their trading volume.</li>
-                <li><strong>User Check Function:</strong> Check if a user is in the system by entering their username.</li>
-            </ul>
-        </div>
+        </section>
 
-        <div class="section">
-            <h3>Create and Use a Wallet or Multi-Wallet on TON</h3>
-            <p>Before using any features of TonTradingBot, you have to set up your wallet with the Bot.</p>
+        <section id="wallet" class="section">
+            <h2>Wallet Management</h2>
+            <p>Easily manage your wallets with TonTradingBot:</p>
             <ul>
-                <li><strong>Create Wallet:</strong> Create a new wallet with a Wallet Address and 24 secret keywords.</li>
-                <li><strong>Create X Wallet:</strong> Create up to 5 wallets at one time.</li>
-                <li><strong>Import Wallet:</strong> Add an existing wallet using 24 secret keywords.</li>
-                <li><strong>Wallet Checking:</strong> Check the wallet list with 24 secret keywords.</li>
-                <li><strong>Delete Wallet:</strong> Delete any wallet on the TonTradingBot list.</li>
+                <li>Create a single wallet or up to 5 wallets at once.</li>
+                <li>Import existing wallets.</li>
+                <li>Check wallet information and balances.</li>
+                <li>Delete unwanted wallets.</li>
             </ul>
-        </div>
+        </section>
 
-        <div class="section">
-            <h3>Trading Tokens Using TonTradingBot</h3>
-            <p>You can easily buy or sell tokens using TonTradingBot without using other wallet platforms.</p>
+        <section id="trading" class="section">
+            <h2>Trading Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Buy/Sell Transactions</h3>
+                    <p>Execute trades directly through the bot interface.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Sniper Mode</h3>
+                    <p>Quickly buy newly listed tokens with customizable settings.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Limit Orders</h3>
+                    <p>Set and manage buy/sell orders at specific prices.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Copy-Trading</h3>
+                    <p>Replicate trades from successful traders automatically.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="additional" class="section">
+            <h2>Additional Features</h2>
             <ul>
-                <li><strong>Buy Transactions:</strong> Paste the Token Contract, check the token information, choose Buy Mode, and confirm the transaction.</li>
-                <li><strong>Sell Transactions:</strong> Paste the Token Contract, check the token information, choose Sell Mode, and confirm the transaction.</li>
+                <li><strong>Fast Swap:</strong> Quick access to recently traded tokens.</li>
+                <li><strong>New Listings:</strong> Stay updated with newly listed tokens.</li>
+                <li><strong>Popular Tokens:</strong> Trade the most popular tokens easily.</li>
+                <li><strong>Honeypot Detection:</strong> Avoid scam tokens with our detection system.</li>
+                <li><strong>Multilingual Support:</strong> Use the bot in your preferred language.</li>
             </ul>
-        </div>
+        </section>
+    </main>
 
-        <div class="section">
-            <h3>Sniper Mode</h3>
-            <p>The Sniper feature allows users to quickly buy newly listed tokens.</p>
-            <ul>
-                <li><strong>Creating a Sniper:</strong> Use Contract Address or Sniper Menu to set up sniping parameters.</li>
-                <li><strong>Sniper Menu Features:</strong> List of active contracts, view contract details, add sniping wallet, and manage snipers.</li>
-            </ul>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 TonTradingBot. All rights reserved.</p>
+            <a href="#" class="btn">Get Started</a>
         </div>
+    </footer>
 
-        <div class="section">
-            <h3>Limit Order</h3>
-            <p>Set buy or sell orders at specified prices using the Limit Orders feature.</p>
-            <ul>
-                <li><strong>Creating a Limit Order:</strong> Paste Contract, choose Add Limit Order, select mode (buy/sell), set the price and amount, and confirm.</li>
-                <li><strong>Viewing Limit Orders:</strong> Monitor and manage limit orders from the Limit Orders panel.</li>
-            </ul>
-        </div>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
 
-        <div class="section">
-            <h3>Copy-Trading</h3>
-            <p>Replicate trades from a source wallet to a destination wallet using the Copy Trade feature.</p>
-            <ul>
-                <li><strong>Set Up:</strong> Add Source Wallet, rename it if needed, and choose the destination wallet for copy-trading.</li>
-                <li><strong>Configuring Copy Trade Settings:</strong> Toggle buy and sell functions, set default trade amounts, and activate Smart Mode.</li>
-            </ul>
-        </div>
+        // Highlight active navigation item
+        window.addEventListener('scroll', () => {
+            let current = '';
+            document.querySelectorAll('section').forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 60) {
+                    current = section.getAttribute('id');
+                }
+            });
 
-        <div class="section">
-            <h3>TON Transfer</h3>
-            <p>Transfer TON securely between wallets.</p>
-            <ul>
-                <li><strong>Steps:</strong> Select the wallet, specify the receiving wallet and amount, and confirm the transaction. Notifications for received TON can be toggled on or off.</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h3>Token Tracking</h3>
-            <p>View and manage your token holdings with the Tracking feature.</p>
-            <ul>
-                <li><strong>Viewing Token List:</strong> Check Wallet Balance to view the top 10 tokens with a value greater than $1. Fast Swap allows quick access to the buy/sell interface for tokens.</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h3>Additional Features</h3>
-            <ul>
-                <li><strong>Fast Swap:</strong> Displays recently traded tokens for quick selection.</li>
-                <li><strong>New Listings:</strong> Scans and lists newly listed tokens meeting predefined standards.</li>
-                <li><strong>Popular Tokens:</strong> Shows the most traded tokens and allows quick trades.</li>
-                <li><strong>Honeypot Detection:</strong> Detects and prevents trading of scam tokens.</li>
-                <li><strong>Multilingual Support:</strong> Supports multiple languages for a global audience.</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h3>Conclusion</h3>
-            <p>TonTradingBot offers a comprehensive and user-friendly platform for cryptocurrency trading on the TON blockchain. Its integration with Telegram, coupled with a rich feature set, makes it an essential tool for traders aiming to optimize their strategies and enhance their market performance.</p>
-            <a href="https://tontradingbot.gitbook.io/docs" class="btn">Learn More</a>
-        </div>
-    </div>
+            document.querySelectorAll('nav ul li a').forEach(li => {
+                li.classList.remove('active');
+                if (li.getAttribute('href').slice(1) === current) {
+                    li.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
