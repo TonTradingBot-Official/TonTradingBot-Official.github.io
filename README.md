@@ -8,7 +8,7 @@ TonTradingBot is your all-in-one solution for cryptocurrency trading developed o
 
 TonTradingBot features a robust Referral System with five tiers, offering users the opportunity to earn lucrative rewards unlike any other bot on the market.
 
-Join the Referral System at: [https://t.me/Ton_TradeBot](https://t.me/Ton_TradeBot)
+Join the Referral System at: [https://t.me/Ton_TradeBot](https://t.me/tontrade?start=J769Quco)
 
 #### How It Works
 
@@ -58,7 +58,7 @@ Before using any features of TonTradingBot, set up your wallet with the Bot. To 
 - **Create X Wallet:** Create up to 5 wallets at one time.
 - **Import Wallet:** Add an existing wallet.
 
-Users can only have a maximum of 20 wallets on TonTradingBot.
+Users can only have a maximum of 20 wallets on [TonTradingBot](https://t.me/tontrade?start=J769Quco).
 
 #### Creating a Wallet
 
@@ -182,7 +182,7 @@ For more information and detailed guides on using TonTradingBot, visit the [TonT
 ## Getting Started
 
 1. **Install Telegram:** Ensure you have Telegram installed on your device.
-2. **Join TonTradingBot:** Access the bot via the link [here](https://t.me/Ton_TradeBot).
+2. **Join TonTradingBot:** Access the bot via the link [here](https://t.me/tontrade?start=J769Quco).
 3. **Set Up Wallets:** Follow the instructions to create or import wallets.
 4. **Start Trading:** Use the bot’s features to begin trading, managing your portfolio, and earning through referrals.
 
@@ -198,5 +198,5 @@ TonTradingBot is licensed under the MIT License. See the LICENSE file for more d
 
 **Questions?**
 
-If you have any questions or need support, please join our [Telegram group](https://t.me/Ton_TradeBot) or visit our [Documentation](https://tontradingbot.gitbook.io/docs).
+If you have any questions or need support, please join our [Telegram group](https://t.me/tontrade?start=J769Quco) or visit our [Documentation](https://tontradingbot.gitbook.io/docs).
 
